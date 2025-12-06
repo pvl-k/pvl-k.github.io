@@ -9,7 +9,7 @@ summary:
     - Team leadership and mentoring experience
 
 contact:
-  email: "explain@analyze.com"
+  email: "explain.analyze@gmail.com"
   linkedin: "https://www.linkedin.com/in/pvl-k"
   github: "https://github.com/pvl-k"
 
@@ -45,7 +45,9 @@ work_experience:
       - dbt
       - Data Modeling
       - ELT
-      - Data Warehouse
+      - Data Warehouse (DWH)
+      - Git
+      - Reporting & Analysis
 
   - title: Analytics Engineer / BI Engineer
     company: omni.sale
@@ -71,8 +73,10 @@ work_experience:
       - dbt
       - Data Modeling
       - ELT
-      - Data Warehouse
+      - Data Warehouse (DWH)
       - Business Intelligence
+      - Git
+      - Reporting & Analysis
 
   - title: Data Warehouse Business Analyst
     company: Samokat
@@ -88,7 +92,7 @@ work_experience:
       - Problem Solving
       - Requirements Analysis
       - BPMN
-      - DWH
+      - Data Warehouse (DWH)
       - Business Analysis
 
   - title: Business Data Analyst
@@ -138,11 +142,11 @@ education:
     location: Russia
     specialization: "Professional development in IT management practices"
 
-  - degree: Master of Science
+  - degree: Mechanical Engineering
     school: Tyumen State Oil & Gas University
     period: Higher Education
     location: Russia
-    specialization: "Mechanical Engineering"
+    specialization: "Master of Science"
     
 
 certifications:
