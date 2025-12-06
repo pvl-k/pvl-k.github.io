@@ -56,7 +56,7 @@ tab_id: tab-cv
             {% assign current_year = 'now' | date: '%Y' | plus: 0 %}
             {% assign reporting_years = current_year | minus: site.data.cv.summary.reporting_since %}
             {% assign analytics_years = current_year | minus: site.data.cv.summary.analytics_since %}
-            <li>{{ reporting_years }} years in Reporting and {{ analytics_years }} years in Analytics</li>
+            <li>{{ analytics_years }} years in Analytics and {{ reporting_years }} years in Reporting</li>
             {% for item in site.data.cv.summary.skills %}
             <li>{{ item }}</li>
             {% endfor %}
