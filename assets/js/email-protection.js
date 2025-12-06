@@ -127,11 +127,54 @@
         });
     }
 
+    /**
+     * Process protected telegram elements
+     */
+    function processProtectedTelegram() {
+        const protectedTelegram = document.querySelectorAll('.protected-telegram');
+
+        protectedTelegram.forEach(function (element) {
+            try {
+                // Get and sanitize username
+                const username = sanitizeEmailPart(element.getAttribute('data-username'));
+
+                if (!username) {
+                    console.warn('Telegram protection: Missing username');
+                    return;
+                }
+
+                // Create link
+                const link = document.createElement('a');
+                link.href = 'https://t.me/' + encodeURIComponent(username);
+                link.className = element.className;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+
+                // Use textContent for security
+                link.textContent = getElementText(element);
+
+                link.setAttribute('aria-label', 'Telegram ' + username);
+
+                // Replace the span with the link
+                if (element.parentNode) {
+                    element.parentNode.replaceChild(link, element);
+                }
+
+            } catch (error) {
+                console.error('Telegram protection error:', error);
+            }
+        });
+    }
+
     // Run on DOM ready
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', processProtectedEmails);
+        document.addEventListener('DOMContentLoaded', function () {
+            processProtectedEmails();
+            processProtectedTelegram();
+        });
     } else {
         // DOM is already ready
         processProtectedEmails();
+        processProtectedTelegram();
     }
 })();

@@ -1,0 +1,11 @@
+{%- comment -%}
+Protected Telegram link display to prevent spam bots
+Usage: {% include protected-telegram.html username=site.data.cv.contact.telegram %}
+Security: Username is HTML-escaped
+{%- endcomment -%}
+
+{%- assign username = include.username | escape -%}
+
+<span class="protected-telegram" data-username="{{ username }}">
+    {{ username }}
+</span>

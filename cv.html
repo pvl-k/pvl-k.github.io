@@ -39,6 +39,10 @@ tab_id: tab-cv
             <a href="{{ site.data.cv.contact.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <div class="contact-item">
+            <i class="fa-brands fa-telegram"></i>
+            {% include protected-telegram.html username=site.data.cv.contact.telegram %}
+        </div>
+        <div class="contact-item">
             <i class="fa-solid fa-envelope"></i>
             {% include protected-email.html email=site.data.cv.contact.email %}
         </div>
