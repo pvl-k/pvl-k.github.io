@@ -4,7 +4,7 @@ summary:
   skills:
     - Analytics Engineer & Data Warehouse System Analyst
     - Extensive experience in DWH, ELT, BI
-    - Proficient in SQL, dbt, Data Modeling
+    - Proficient in Data Modeling, Data Quality and Data Governance
     - Experience in fintech, e-commerce, energy domains
     - Team leadership and mentoring experience
 
@@ -45,6 +45,8 @@ work_experience:
       - SQL
       - dbt
       - Data Modeling
+      - Data Quality
+      - Data Governance
       - ELT
       - Data Warehouse (DWH)
       - Git
@@ -73,6 +75,7 @@ work_experience:
       - SQL
       - dbt
       - Data Modeling
+      - Data Quality
       - ELT
       - Data Warehouse (DWH)
       - Business Intelligence
