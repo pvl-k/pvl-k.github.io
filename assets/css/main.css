@@ -1359,3 +1359,14 @@ section:last-child {
     margin: 0.1cm 0;
   }
 }
+/* Protected links styles */
+.protected-telegram,
+.protected-email {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.protected-telegram:hover,
+.protected-email:hover {
+  text-decoration: underline;
+}

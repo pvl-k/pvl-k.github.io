@@ -132,9 +132,15 @@
      */
     function processProtectedTelegram() {
         const protectedTelegram = document.querySelectorAll('.protected-telegram');
+        console.log('Found ' + protectedTelegram.length + ' protected telegram elements');
 
         protectedTelegram.forEach(function (element) {
             try {
+                // Skip if already processed (is an anchor tag)
+                if (element.tagName === 'A') {
+                    return;
+                }
+
                 // Get and sanitize username
                 const username = sanitizeEmailPart(element.getAttribute('data-username'));
 
@@ -150,6 +156,9 @@
                 link.target = '_blank';
                 link.rel = 'noopener noreferrer';
 
+                // Copy data attribute to prevent re-processing issues and for debugging
+                link.setAttribute('data-username', username);
+
                 // Use textContent for security
                 link.textContent = getElementText(element);
 
@@ -158,6 +167,7 @@
                 // Replace the span with the link
                 if (element.parentNode) {
                     element.parentNode.replaceChild(link, element);
+                    console.log('Protected Telegram link created for ' + username);
                 }
 
             } catch (error) {
