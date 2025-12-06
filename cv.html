@@ -91,12 +91,12 @@ tab_id: tab-cv
                         <span class="sub-role-title">{{ subrole.role }}</span>
                         <span class="sub-role-period">{{ subrole.period }}</span>
                     </div>
-                    <p class="job-description">{{ subrole.description }}</p>
+                    <p class="job-description">{{ subrole.description | newline_to_br }}</p>
                 </div>
                 {% endfor %}
             </div>
             {% elsif job.description != "" %}
-            <p class="job-description">{{ job.description }}</p>
+            <p class="job-description">{{ job.description | newline_to_br }}</p>
             {% endif %}
             {% if job.technologies %}
             <div class="tech-tags">
