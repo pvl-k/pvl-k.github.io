@@ -1,0 +1,42 @@
+name: Pavel K.
+username: pvl-k
+avatar: assets/images/pvl-k.jpg
+bio: |
+  Data Expert · ETL/ELT · DWH · BI
+  <br>
+  5+ years of experience in analytics, reporting and data engineering (fintech, e-commerce, energy).
+  <br>
+
+stats:
+  followers: 1271
+  following: 89
+
+info:
+  - icon: briefcase
+    text: Analytics Engineer at AVO.uz
+  - icon: location
+    text: Haifa, Israel
+  - icon: email
+    text: explain.analyze@gmail.com
+    link: mailto:explain.analyze@gmail.com
+  - icon: link
+    text: explain.analyze.dev
+    link: https://explain.analyze.dev
+
+highlights:
+  - "📊 Analytics Engineer"
+  - "🏗️ DWH Specialist"
+
+organizations:
+  - name: AVO.uz
+    badge: AV
+  - name: omni.sale
+    badge: OM
+
+online:
+  - icon: fa-brands fa-linkedin
+    text: pvl-k
+    link: https://www.linkedin.com/in/pvl-k/
+  - icon: fa-brands fa-github
+    text: pvl-k
+    link: https://github.com/pvl-k

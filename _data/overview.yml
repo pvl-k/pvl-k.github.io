@@ -1,0 +1,16 @@
+intro:
+  text: "I'm Pavel, a Data Expert specializing in ELT, Data Warehousing, and Business Intelligence. With 5+ years of experience in analytics, reporting and data engineering across fintech, e-commerce, and energy domains, I build robust data solutions that drive business insights."
+
+online:
+  - name: LinkedIn
+    handle: pvl-k
+    url: https://www.linkedin.com/in/pvl-k/
+    icon: fa-brands fa-linkedin
+  - name: GitHub
+    handle: pvl-k
+    url: https://github.com/pvl-k
+    icon: fa-brands fa-github
+
+contribution:
+  count: 1247
+  period: "in the last year"

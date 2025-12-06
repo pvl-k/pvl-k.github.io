@@ -1,0 +1,211 @@
+---
+layout: default
+title: Pavel K. - CV
+tab: cv
+tab_id: tab-cv
+---
+
+<!-- Print-only name header -->
+<div class="print-only-name">
+    <h1>Pavel K.</h1>
+</div>
+
+<!-- Download button -->
+<div class="cv-header">
+    <button class="download-btn" onclick="window.print()">
+        {% include icons/download.html %}
+        Download PDF
+    </button>
+</div>
+
+<!-- CV Header -->
+<section class="cv-intro">
+    <p>
+        As a Data Enthusiast, Engineer, and Analyst at the intersection of tech and business, I have experience in
+        building analytics for sales, marketing, inventory management, customer and user segmentation, journey
+        processes, and business performance across fintech, e-commerce, and power engineering domains.
+        My goal is to provide stakeholders with accurate, timely data to help businesses make informed decisions.
+        My experience with data and passion for technology, based on STEM education, have enabled me to create effective
+        data products that improve operational efficiency, reduce time spent on reporting, and enhance data quality.
+    </p>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="{{ site.data.cv.contact.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <a href="{{ site.data.cv.contact.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>{{ site.data.cv.contact.email }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- Summary -->
+<section>
+    <h2 class="section-title">
+        <i class="fa-solid fa-list-check"></i>
+        Summary
+    </h2>
+    <div class="card">
+        <ul class="summary-list">
+            {% assign current_year = 'now' | date: '%Y' | plus: 0 %}
+            {% assign reporting_years = current_year | minus: site.data.cv.summary.reporting_since %}
+            {% assign analytics_years = current_year | minus: site.data.cv.summary.analytics_since %}
+            <li>{{ reporting_years }} years in reporting and {{ analytics_years }} years in analytics</li>
+            {% for item in site.data.cv.summary.skills %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<!-- Work Experience -->
+<section>
+    <h2 class="section-title">
+        {% include icons/briefcase-large.html %}
+        Professional Experience
+    </h2>
+    <div class="experience-list">
+        {% for job in site.data.cv.work_experience %}
+        <div class="card experience-card">
+            <div class="experience-header">
+                <div class="experience-info">
+                    <h3 class="job-title">{{ job.title }}</h3>
+                    <p class="company">{{ job.company }}</p>
+                </div>
+                <div class="experience-meta">
+                    <p>{{ job.period }}</p>
+                    <p>{{ job.location }}</p>
+                </div>
+            </div>
+            {% if job.roles %}
+            <div class="sub-roles">
+                {% for subrole in job.roles %}
+                <div class="sub-role">
+                    <div class="sub-role-header">
+                        <span class="sub-role-title">{{ subrole.role }}</span>
+                        <span class="sub-role-period">{{ subrole.period }}</span>
+                    </div>
+                    <p class="job-description">{{ subrole.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            {% elsif job.description != "" %}
+            <p class="job-description">{{ job.description }}</p>
+            {% endif %}
+            {% if job.technologies %}
+            <div class="tech-tags">
+                {% for tech in job.technologies %}
+                <span class="tech-tag">
+                    <span class="tech-dot"></span>
+                    {{ tech }}
+                </span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+
+</section>
+
+<!-- Certifications -->
+{% if site.data.cv.certifications %}
+<section>
+    <h2 class="section-title">
+        {% include icons/award.html %}
+        Certifications
+    </h2>
+    <div class="education-list">
+        {% for cert in site.data.cv.certifications %}
+        <div class="card education-card">
+            <div class="education-header">
+                <div class="education-info">
+                    <h3 class="degree">{{ cert.title }}</h3>
+                    <p class="school">{{ cert.issuer }}</p>
+                    {% if cert.credential_id %}
+                    <p style="margin-top: 0.5rem; color: var(--muted-foreground); font-size: 0.875rem;">Credential ID:
+                        {{ cert.credential_id }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Skills -->
+{% if site.data.cv.skills %}
+<section>
+    <h2 class="section-title">
+        <i class="fa-solid fa-code"></i>
+        Skills
+    </h2>
+    <div class="card">
+        {% if site.data.cv.skills.technical %}
+        <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem;">Technical Skills</h3>
+            <div class="tech-tags">
+                {% for skill in site.data.cv.skills.technical %}
+                <span class="tech-tag">
+                    <span class="tech-dot"></span>
+                    {{ skill }}
+                </span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% if site.data.cv.skills.domain %}
+        <div>
+            <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem;">Domain Expertise</h3>
+            <div class="tech-tags">
+                {% for skill in site.data.cv.skills.domain %}
+                <span class="tech-tag">
+                    <span class="tech-dot"></span>
+                    {{ skill }}
+                </span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Education -->
+<section>
+    <h2 class="section-title">
+        {% include icons/graduation-cap.html %}
+        Education
+    </h2>
+    <div class="education-list">
+        {% for edu in site.data.cv.education %}
+        <div class="card education-card">
+            <div class="education-header">
+                <div class="education-info">
+                    <h3 class="degree">{{ edu.degree }}</h3>
+                    <p class="school">{{ edu.school }}</p>
+                    {% if edu.specialization %}
+                    <p style="margin-top: 0.5rem; color: var(--muted-foreground);">{{ edu.specialization }}</p>
+                    {% endif %}
+                </div>
+                <div class="education-meta">
+                    <p>{{ edu.period }}</p>
+                    <p>{{ edu.location }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<div style="text-align: right; margin-top: 3rem; font-style: italic; color: var(--muted-foreground);">
+    Best printed with Google Chrome
+</div>
