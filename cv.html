@@ -115,31 +115,6 @@ tab_id: tab-cv
 
 </section>
 
-<!-- Certifications -->
-{% if site.data.cv.certifications %}
-<section>
-    <h2 class="section-title">
-        {% include icons/award.html %}
-        Certifications
-    </h2>
-    <div class="education-list">
-        {% for cert in site.data.cv.certifications %}
-        <div class="card education-card">
-            <div class="education-header">
-                <div class="education-info">
-                    <h3 class="degree">{{ cert.title }}</h3>
-                    <p class="school">{{ cert.issuer }}</p>
-                    {% if cert.credential_id %}
-                    <p style="margin-top: 0.5rem; color: var(--muted-foreground); font-size: 0.875rem;">Credential ID:
-                        {{ cert.credential_id }}</p>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</section>
-{% endif %}
 
 <!-- Skills -->
 {% if site.data.cv.skills %}
@@ -205,6 +180,32 @@ tab_id: tab-cv
         {% endfor %}
     </div>
 </section>
+
+<!-- Certifications -->
+{% if site.data.cv.certifications %}
+<section>
+    <h2 class="section-title">
+        {% include icons/award.html %}
+        Certifications
+    </h2>
+    <div class="education-list">
+        {% for cert in site.data.cv.certifications %}
+        <div class="card education-card">
+            <div class="education-header">
+                <div class="education-info">
+                    <h3 class="degree">{{ cert.title }}</h3>
+                    <p class="school">{{ cert.issuer }}</p>
+                    {% if cert.credential_id %}
+                    <p style="margin-top: 0.5rem; color: var(--muted-foreground); font-size: 0.875rem;">Credential ID:
+                        {{ cert.credential_id }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
 
 <div style="text-align: right; margin-top: 3rem; font-style: italic; color: var(--muted-foreground);">
     Best printed with Google Chrome
