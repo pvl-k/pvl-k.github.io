@@ -80,7 +80,7 @@ work_experience:
 
   - title: Data Warehouse Business Analyst
     company: Samokat
-    period: 10.2022 - 01.2023
+    period: 2023
     location: Remote
     description: |
       Event Warehouse is a centralized data repository product being developed for Samokat, one of the largest dark-store grocery e-commerce platforms in Europe. It captures user actions and interactions within the mobile app and website, enabling the marketing team to deliver personalized product recommendations, driving higher conversion rates and customer satisfaction.
@@ -97,7 +97,7 @@ work_experience:
 
   - title: Business Data Analyst
     company: Inter RAO
-    period: 2016 - 11.2022
+    period: 2016 - 2022
     location: Moscow, Russia (Hybrid)
     description: |
       Inter RAO Engineering is the Engineering Division of Inter RAO, the largest electricity producer in Russia.
