@@ -13,15 +13,15 @@ stats:
 
 info:
   - icon: briefcase
-    text: Analytics Engineer at AVO.uz
+    text: Analytics Engineer at AVO Bank
   - icon: location
     text: Haifa, Israel
   - icon: email
     text: explain.analyze@gmail.com
     link: mailto:explain.analyze@gmail.com
   - icon: link
-    text: explain.analyze.dev
-    link: https://explain.analyze.dev
+    text: pvl-k.github.io
+    link: https://pvl-k.github.io
 
 highlights:
   - "📊 Analytics Engineer"

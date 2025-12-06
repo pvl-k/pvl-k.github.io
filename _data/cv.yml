@@ -15,7 +15,7 @@ contact:
 
 work_experience:
   - title: Analytics Engineer / Data Warehouse System Analyst
-    company: AVO.uz
+    company: AVO Bank
     period: 11.2024 - Present
     location: Remote
     description: |
@@ -138,6 +138,13 @@ education:
     location: Russia
     specialization: "Professional development in IT management practices"
 
+  - degree: Master of Science
+    school: Tyumen State Oil & Gas University
+    period: Higher Education
+    location: Russia
+    specialization: "Mechanical Engineering"
+    
+
 certifications:
   - title: Big Data Fundamentals with PySpark
     issuer: DataCamp
@@ -151,15 +158,12 @@ skills:
   technical:
     - SQL
     - Data Warehouse (DWH)
-    - Extract, Transform, Load (ETL)
+    - Extract, Load, Transform (ELT)
     - Data Build Tool (dbt)
     - Data Modeling
     - Business Intelligence (BI)
-    - PySpark
   
   domain:
-    - E-commerce Analytics
+    - E-Commerce
     - Fintech
     - Energy Sector
-    - System Analysis
-    - Requirements Gathering
