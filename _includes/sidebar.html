@@ -41,7 +41,9 @@
             {% elsif item.icon == "link" %}
             {% include icons/link.html %}
             {% endif %}
-            {% if item.link %}
+            {% if item.icon == "email" %}
+            {% include protected-email-link.html email=item.text %}
+            {% elsif item.link %}
             <a href="{{ item.link }}" {% if item.icon=="link" %}target="_blank" rel="noopener noreferrer" {% endif %}
                 class="link">{{ item.text }}</a>
             {% else %}

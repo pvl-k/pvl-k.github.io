@@ -1,0 +1,16 @@
+{%- comment -%}
+Protected email link for sidebar and other locations with mailto links
+Usage: {% include protected-email-link.html email="email@example.com" %}
+Security: All parts are HTML-escaped to prevent XSS
+{%- endcomment -%}
+
+{%- assign email = include.email -%}
+{%- assign parts = email | split: '@' -%}
+{%- assign username = parts[0] | escape -%}
+{%- assign domain_parts = parts[1] | split: '.' -%}
+{%- assign domain = domain_parts[0] | escape -%}
+{%- assign tld = domain_parts[1] | escape -%}
+
+<a href="#" class="link protected-email" data-user="{{ username }}" data-domain="{{ domain }}" data-tld="{{ tld }}">
+    {{ username }}&#64;{{ domain }}&#46;{{ tld }}
+</a>

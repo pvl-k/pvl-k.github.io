@@ -40,7 +40,7 @@ tab_id: tab-cv
         </div>
         <div class="contact-item">
             <i class="fa-solid fa-envelope"></i>
-            <span>{{ site.data.cv.contact.email }}</span>
+            {% include protected-email.html email=site.data.cv.contact.email %}
         </div>
     </div>
 </section>

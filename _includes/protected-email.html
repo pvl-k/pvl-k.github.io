@@ -1,0 +1,16 @@
+{%- comment -%}
+Protected email display to prevent spam bots
+Usage: {% include protected-email.html email=site.data.cv.contact.email %}
+Security: All parts are HTML-escaped to prevent XSS
+{%- endcomment -%}
+
+{%- assign email = include.email -%}
+{%- assign parts = email | split: '@' -%}
+{%- assign username = parts[0] | escape -%}
+{%- assign domain_parts = parts[1] | split: '.' -%}
+{%- assign domain = domain_parts[0] | escape -%}
+{%- assign tld = domain_parts[1] | escape -%}
+
+<span class="protected-email" data-user="{{ username }}" data-domain="{{ domain }}" data-tld="{{ tld }}">
+    {{ username }}&#64;{{ domain }}&#46;{{ tld }}
+</span>
