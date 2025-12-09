@@ -23,24 +23,11 @@ work_experience:
       AVO is an online-first bank accessible via smartphone. It achieved impressive results in its first year and sets ambitious goals for the future in Uzbekistan's fintech market.
       The Data Warehouse is the bank's central data repository, consolidating all the data the business needs for decision-making: from marketing communication data to optimizing risk assessment models for credit approvals.
 
-      Key achievements:
-      - Implemented a client segmentation methodology in close collaboration with stakeholders.
-      - Delivered an end-to-end analytical solution built from scratch to measure and evaluate the performance of a newly launched banking product.
-      - Took on data engineering tasks, accelerating delivery and reducing time-to-data for data marts.
-      - Implemented an Activity Schema (Event-based Schema) that optimized storage and reuse of key user events, speeding up the development of new analytical products and reducing logic duplication.
-
-      Work includes:
-      1. Developing automated reporting solutions:
-      - Collaborating with data source owners and data engineers to analyze data sources and design source-to-target (S2T) mappings for DWH integration.
-      - Aligning business-technical documentation with stakeholders: from reporting to business logic
-      - Designing, implementing, and maintaining data transformation pipelines (SQL models using dbt) tailored to business needs.
-      - Creating automated tests to ensure data quality.
-      - Developing and maintaining the semantic layer in dbt to standardize business KPIs and definitions across DWH and BI.
-      - Providing technical support for data marts, including refactoring, query optimization, performance tuning, and resolving bottlenecks.
-      2. New team members' support and mentorship:
-      - Supporting onboarding as a buddy: helping newcomers grasp tools, workflows, and context.
-      - Sharing knowledge regularly to support team members' growth and effective collaboration.
-      - Document key processes and best practices to accelerate onboarding and improve team efficiency.
+      -	Implemented several analytical solutions from scratch to evaluate the performance of new banking products, enabling stakeholders to make data-driven decisions from day one.
+      -	Took on Data Engineering tasks, effectively reducing development time and accelerating the delivery of new data marts for the product team.
+      -	Implemented an Activity Schema to centralize key user events, which standardized business logic, reduced code duplication, and shortened time-to-market for new product analytics.
+      -	Integrated Data Quality controls into data marts, allowing for faster incident detection and increasing business trust in DWH data.
+      -	Initiated and executed the refactoring and optimization of pipelines for key data marts, improving SLAs and reducing data availability time.
     technologies:
       - SQL
       - dbt
@@ -59,18 +46,12 @@ work_experience:
     description: |
       A startup in the e-commerce domain that enables sellers to optimize their operations across marketplaces through automation tools.
 
-      Key achievements:
-      - Developed and implemented automated financial and marketing reporting, inventory analytics, and developer workload tracking. Designed and integrated calculation logic for key business metrics (GMV, AOV, CAC, CTR, CPO, CPC, RPC, ROMI, etc.) into reporting systems, enhancing transparency and accelerating decision-making.
-      - Developed and evolved the semantic layer in DWH, establishing unified business KPIs and standardizing data definitions across analytical domains, which improved consistency between DWH and BI reports.
-      - Implemented automated data quality control for data coming from marketplaces, significantly improving the accuracy of sales, marketing campaigns, and inventory analytics.
-      - Seamlessly migrated from Looker Studio to an open-source BI tool, increasing flexibility and reducing reliance on a SaaS provider.
+      -	Designed DWH infrastructure and ETL processes for a B2B analytical solution in e-commerce, covering sales, marketing, and inventory reporting.
+      -	Automated financial and management reporting, saving the team approximately 10 hours of manual work weekly.
+      -	Implemented comprehensive analytics for sales, marketing, and inventory management, increasing process transparency and accelerating decision-making.
+      -	Deployed automated quality checks for data incoming from marketplaces to prevent incorrect data from entering the DWH.
+      -	Executed a smooth migration from Looker Studio to an open-source BI tool, enhancing system flexibility and reducing dependency on SaaS providers.
 
-      Work included:
-      - Development of analytical solutions for e-commerce, including reporting on sales, marketing, and inventory.
-      - Maintaining data accuracy and reliability through automated checks and monitoring processes.
-      - Researching data sources (APIs, databases, JSON/CSV/XML files, etc.) and preparing technical requirements and S2T mappings for DWH integration.
-      - Developing ETL processes, creating and supporting data marts for BI systems.
-      - Preparing and visualizing reports (dashboards) for key business performance indicators.
     technologies:
       - SQL
       - dbt
@@ -89,7 +70,6 @@ work_experience:
     description: |
       Event Warehouse is a centralized data repository product being developed for Samokat, one of the largest dark-store grocery e-commerce platforms in Europe. It captures user actions and interactions within the mobile app and website, enabling the marketing team to deliver personalized product recommendations, driving higher conversion rates and customer satisfaction.
 
-      Key achievements:
       - Developed a solution to block fraudulent in-app advertising traffic, increasing ROMI by 20% and reducing infrastructure load by 15%.
       - Created a solution for updating the actual order size acquired through advertising partners, resulting in a monthly cost reduction of 100K USD for customer acquisition.
     technologies:
@@ -106,22 +86,9 @@ work_experience:
     description: |
       Inter RAO Engineering is the Engineering Division of Inter RAO, the largest electricity producer in Russia.
 
-      Key achievements:
-      -	Took over the ad-hoc reporting process and reorganized it, which led to metric “on-time completion” up to 98%.
-      -	Automated IT budget and forecast from manual processing to an automated process.
-      -	Reduced IT cost by 10% yearly.
-      -	Developed databases and efficient ETL processes, resulting in improved productivity and reduced turnaround time for report generation.
-      -	Demonstrated strong analytical skills in interpreting complex data sets and presenting insights to stakeholders clearly and concisely.
-      -	Maintained a high level of attention to detail, ensuring that all data was properly formatted and validated before being included in reports.
-
-      Work included:
-      -	Worked on data ingestion/validation/transformation from multiple sources.
-      -	Defined correct data schema for data pipelines for IT budget, forecast, and other services, including various ad-hoc reports on requests from Headquarters and the Ministry of Energy.
-      -	Building data pipelines and ETL processes.
-      -	Presented data analytics and reports to key stakeholders of the company.
-      -	Performing data analysis and reporting for service performance.
-      -	Worked with the business side to gather requirements, converted them to tech specs, and provided tech requirements to other engineers in partner companies.
-      -	Owned the company's IT-budget/costs/forecast and oversaw presenting it to key stakeholders in the company.
+      -	Reorganized the ad-hoc reporting process by automating data collection, storage, and reuse, ensuring a 98% on-time delivery rate.
+      -	Developed a database and ETL processes from scratch to automate reporting for the Ministry of Energy and the parent company.
+      -	Acted as the key analyst gathering requirements from business stakeholders and translating them into technical specifications for development.
     technologies:
       - MySQL
       - PostgreSQL
@@ -150,7 +117,7 @@ education:
     school: Tyumen State Oil & Gas University
     period: Higher Education
     location: Russia
-    specialization: "Master of Science"
+    specialization: "Engineer’s Degree"
     
 
 certifications:
@@ -164,12 +131,18 @@ certifications:
 
 skills:
   technical:
-    - SQL
+    - PostgreSQL
+    - GreenPlum
+    - MySQL
+    - dbt
+    - Airflow
     - Data Warehouse (DWH)
     - Extract, Load, Transform (ELT)
     - Data Build Tool (dbt)
     - Data Modeling
     - Business Intelligence (BI)
+    - Docker
+    - git
   
   domain:
     - E-Commerce
