@@ -24,7 +24,7 @@ work_experience:
       The Data Warehouse is the bank's central data repository, consolidating all the data the business needs for decision-making: from marketing communication data to optimizing risk assessment models for credit approvals.
 
       - Designed and delivered several end-to-end analytical solutions for newly launched banking products, providing executive stakeholders with frameworks to evaluate performance and refine post-launch strategies.
-      - Implemented an event-based Activity Schema combined with a Schemaless approach, which standardized business logic and simplified event integration, significantly shortening time-to-market for new analytical products.
+      - Implemented an event-based Activity Schema combined with a schemaless approach to centralize key user events, eliminating logic duplication and achieving hourly data delivery (latency < 1h) while significantly reducing time-to-data for stakeholders.
       - Collaborated with stakeholders to develop a client segmentation methodology, creating the data foundation for personalized marketing campaigns and enhanced customer engagement.
       - Engineered robust data transformation pipelines and a standardized semantic layer using dbt, incorporating automated Data Quality controls to increase business trust and ensure 100% reliable reporting.
       - Initiated and executed the refactoring of critical data pipelines, improving SLAs and reducing "time-to-data" through query performance tuning and resolving system bottlenecks.
