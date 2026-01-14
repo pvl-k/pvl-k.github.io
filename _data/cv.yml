@@ -23,11 +23,12 @@ work_experience:
       AVO is an online-first bank accessible via smartphone. It achieved impressive results in its first year and sets ambitious goals for the future in Uzbekistan's fintech market.
       The Data Warehouse is the bank's central data repository, consolidating all the data the business needs for decision-making: from marketing communication data to optimizing risk assessment models for credit approvals.
 
-      -	Implemented several analytical solutions from scratch to evaluate the performance of new banking products, enabling stakeholders to make data-driven decisions from day one.
-      -	Took on Data Engineering tasks, effectively reducing development time and accelerating the delivery of new data marts for the product team.
-      -	Implemented an Activity Schema to centralize key user events, which standardized business logic, reduced code duplication, and shortened time-to-market for new product analytics.
-      -	Integrated Data Quality controls into data marts, allowing for faster incident detection and increasing business trust in DWH data.
-      -	Initiated and executed the refactoring and optimization of pipelines for key data marts, improving SLAs and reducing data availability time.
+      - Designed and delivered several end-to-end analytical solutions for newly launched banking products, providing executive stakeholders with frameworks to evaluate performance and refine post-launch strategies.
+      - Implemented an event-based Activity Schema combined with a schemaless approach (JSON-based storage), which standardized business logic and simplified event integration, significantly shortening time-to-market for new analytical products.
+      - Collaborated with stakeholders to develop a client segmentation methodology, creating the data foundation for personalized marketing campaigns and enhanced customer engagement.
+      - Engineered robust data transformation pipelines and a standardized semantic layer using dbt, incorporating automated Data Quality controls to increase business trust and ensure 100% reliable reporting.
+      - Initiated and executed the refactoring of critical data pipelines, improving SLAs and reducing "time-to-data" through query performance tuning and resolving system bottlenecks.
+      - Shortened onboarding time and improved team efficiency by mentoring new hires and documenting core processes, workflows, and best practices.
     technologies:
       - SQL
       - dbt
@@ -44,14 +45,13 @@ work_experience:
     period: 2023 - 11.2024
     location: Remote
     description: |
-      A startup in the e-commerce domain that enables sellers to optimize their operations across marketplaces through automation tools.
+      A SaaS startup in the e-commerce domain that enables sellers to optimize their operations across marketplaces through automation tools.
 
-      -	Designed DWH infrastructure and ETL processes for a B2B analytical solution in e-commerce, covering sales, marketing, and inventory reporting.
-      -	Automated financial and management reporting, saving the team approximately 10 hours of manual work weekly.
-      -	Implemented comprehensive analytics for sales, marketing, and inventory management, increasing process transparency and accelerating decision-making.
-      -	Deployed automated quality checks for data incoming from marketplaces to prevent incorrect data from entering the DWH.
-      -	Executed a smooth migration from Looker Studio to an open-source BI tool, enhancing system flexibility and reducing dependency on SaaS providers.
-
+      - Developed a comprehensive reporting ecosystem for financial, marketing, and inventory analytics, integrating complex calculation logic for 10+ core KPIs (GMV, CAC, ROMI, AOV, etc.) to drive data-informed decision-making.
+      - Built and scaled the DWH semantic layer, establishing unified business definitions and standardizing KPIs across all analytical domains to ensure 100% consistency between the warehouse and BI reports.
+      - Implemented automated Data Quality (DQ) controls and S2T mappings for marketplace API integrations, significantly increasing the reliability of sales and inventory data.
+      - Led the migration from Looker Studio to an open-source BI platform, reducing reliance on SaaS providers and enhancing the flexibility of data visualizations and access control.
+      - Designed and maintained scalable ETL processes and data marts, providing stakeholders with real-time visibility into developer workloads and operational efficiency.
     technologies:
       - SQL
       - dbt
@@ -68,10 +68,11 @@ work_experience:
     period: 2023
     location: Remote
     description: |
-      Event Warehouse is a centralized data repository product being developed for Samokat, one of the largest dark-store grocery e-commerce platforms in Europe. It captures user actions and interactions within the mobile app and website, enabling the marketing team to deliver personalized product recommendations, driving higher conversion rates and customer satisfaction.
+      Event Warehouse is a centralized data repository product being developed for Samokat, a global leader in the Q-commerce industry, operating the world’s largest network of 2400+ dark stores and processing over 250M orders annually. 
+      It captures user actions and interactions within the mobile app and website, enabling the marketing team to deliver personalized product recommendations, driving higher conversion rates and customer satisfaction.
 
-      - Developed a solution to block fraudulent in-app advertising traffic, increasing ROMI by 20% and reducing infrastructure load by 15%.
-      - Created a solution for updating the actual order size acquired through advertising partners, resulting in a monthly cost reduction of 100K USD for customer acquisition.
+      - Designed a data-driven anti-fraud solution to identify and block fraudulent in-app advertising traffic, resulting in a 20% increase in ROMI and a 15% reduction in infrastructure load.
+      - Developed an automated order reconciliation model to sync actual order sizes with advertising partner data, leading to a $100K monthly reduction in customer acquisition costs (CAC).
     technologies:
       - Problem Solving
       - Requirements Analysis
@@ -84,11 +85,14 @@ work_experience:
     period: 2016 - 2022
     location: Moscow, Russia (Hybrid)
     description: |
-      Inter RAO Engineering is the Engineering Division of Inter RAO, the largest electricity producer in Russia.
+      Inter RAO Engineering is the Engineering Division of Inter RAO, the largest public diversified energy company in Eastern Europe by retail customer base (~20M) and a top-tier power producer with ~31 GW capacity.
 
-      -	Reorganized the ad-hoc reporting process by automating data collection, storage, and reuse, ensuring a 98% on-time delivery rate.
-      -	Developed a database and ETL processes from scratch to automate reporting for the Ministry of Energy and the parent company.
-      -	Acted as the key analyst gathering requirements from business stakeholders and translating them into technical specifications for development.
+      - Developed high-performance ETL pipelines and database schemas to automate data ingestion, validation, and transformation from multiple sources, resulting in a multiple-fold reduction in turnaround time for recurring data requests.
+      - Designed and implemented a standardized data framework for regulatory reporting, ensuring 100% accuracy and compliance for high-stakes submissions to the Ministry of Energy and Corporate Headquarters.
+      - Optimized the ad-hoc reporting ecosystem, boosting the "on-time completion" metric to 98% by implementing automated validation checks and reorganizing data workflows.
+      - Automated the IT budgeting and forecasting process, migrating the department from manual spreadsheets to an automated system, which eliminated human error and ensured real-time data consistency.
+      - Managed and optimized an IT budget of $1.5M+, achieving a 10% annual cost reduction by conducting data-driven audits of vendor contracts and consolidating procurement.
+      - Served as a primary link between business and tech teams, translating complex stakeholder requirements into clear technical specifications for analytics product development.
     technologies:
       - MySQL
       - PostgreSQL
